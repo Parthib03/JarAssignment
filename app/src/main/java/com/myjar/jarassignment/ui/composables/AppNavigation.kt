@@ -40,8 +40,7 @@ fun AppNavigation(
         composable("item_list") {
             ItemListScreen(
                 viewModel = viewModel,
-                onNavigateToDetail = { selectedItem -> navigate.value = selectedItem
-                                     navController.navigate("item_detail/$selectedItem")},
+                onNavigateToDetail = { selectedItem -> navigate.value = selectedItem },
                 navigate = navigate,
                 navController = navController
             )
