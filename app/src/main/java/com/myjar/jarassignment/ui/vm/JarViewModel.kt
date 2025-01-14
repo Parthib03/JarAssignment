@@ -23,7 +23,7 @@ class JarViewModel : ViewModel() {
         viewModelScope.launch {
             repository.fetchResults().collect {
                 data ->
-                Log.d("results data", data.toString())
+                Log.d("results", "$data")
                 _listStringData.value = data
             }
         }
